@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 html,
 body{
-    font-family: 'Montserrat', sans-serif;
+    font-family: sans-serif;
     box-sizing: border-box;
 }
 #menu{
@@ -19,31 +19,63 @@ body{
     width: 35%;
     margin-left: 32.5%;
 }
-#menuSecond{
+#menuSecondOne{
     list-style-type: none;
-    padding: 8px;
     cursor: pointer;
     position: relative;
     z-index: 1;
     transition: 0.5s;
+    padding-left: 10px;
+    padding-right: 10px;
 }
-#menuSecond::before{
+#menuSecondOne p{
+    z-index: -1;
+}
+#menuSecondHoverOne{
+    transition: 0.2s;
+}
+#menuUnderSecondOne{
+    position: relative;
+    z-index: 1;
+}
+#menuUnderSecondOne::before{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    bottom: 0;
+    width:0;
+    height: 100%;
+    background-color: coral;
+}
+#menuUnderSecondOne:hover::before{
+    animation:menuUnderSecondAnimation 0.5s forwards ;
+}
+#menuSecondOne::before{
     content: '';
     position: absolute;
     z-index: -1;
     overflow: hidden;
     width: 100%;
-    background-color: black;
+    background-color: rgba(0,0,0,0.2);
     height: 0;
     top: 0;
     left: 0;
 }
-#menuSecond:hover::before{
+#menuSecondOne:hover::before{
     animation: mainMenuAnimation 0.5s forwards;
+
 }
-#menuSecond:hover{
-    color:white;
-    text-shadow: 5px 0px 10px;
+#menuUnderOne{
+    list-style-type: none;
+    padding-left: 0;
+    position: absolute;
+    left: -0.5%;
+}
+#menuUnderSecondOne{
+    background-color: lightsteelblue;
+    padding: 10px;
+    display: flex;
 }
 @keyframes mainMenuAnimation{
     0%{
@@ -69,3 +101,12 @@ body{
         border-bottom-right-radius: 1em;
     }
 }
+@keyframes menuUnderSecondAnimation{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+
