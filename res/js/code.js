@@ -4,8 +4,13 @@ const menuUnderOne = document.getElementById("menuUnderOne");
 const menuUnderSecondOne = document.getElementById("menuUnderSecondOne");
 const menuSecondHoverOne = document.getElementById("menuSecondHoverOne");
 
+function menuSecondAppear(){
+    menuUnderOne.style.display = "block";
+    menuUnderOne.style.animation = "menuUnderAnimation 1s forwards";
+}
+
 menuSecondOne.onmouseover = () => {
-    menuUnderOne.style.display = "grid";
+    menuSecondAppear();
     menuUnderSecondOne.style.color = "black";
 }
 menuSecondOne.onmouseout = () => {
