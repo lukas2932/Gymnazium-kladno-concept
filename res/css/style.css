@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 html,
 body{
-    font-family: sans-serif;
+    font-family: 'Montserrat';
     box-sizing: border-box;
 }
 #menu{
@@ -10,6 +10,7 @@ body{
     margin-top: -8px;
     margin-left: -8px;
     position: fixed;
+    z-index: 1;
 }
 #menu > ul{
     display: flex;
@@ -34,10 +35,13 @@ body{
 #menuSecondHoverOne{
     transition: 0.2s;
 }
+
 #menuUnderSecondOne{
     position: relative;
     z-index: 1;
 }
+
+
 #menuUnderSecondOne::before{
     content: '';
     position: absolute;
@@ -46,11 +50,25 @@ body{
     bottom: 0;
     width:0;
     height: 100%;
-    background-color: coral;
+    background-color: lightgrey;
 }
 #menuUnderSecondOne:hover::before{
     animation:menuUnderSecondAnimation 0.5s forwards ;
 }
+#menuUnderSecondOne::after{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    left: -100px;
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid black;
+}
+#menuUnderSecondOne:hover::after{
+    animation:menuUnderSecondAnimationAfter 0.7s forwards;
+}
+
 #menuSecondOne::before{
     content: '';
     position: absolute;
@@ -66,16 +84,52 @@ body{
     animation: mainMenuAnimation 0.5s forwards;
 
 }
+
+
 #menuUnderOne{
     list-style-type: none;
     padding-left: 0;
     position: absolute;
     left: -0.5%;
+    height: 0px;
+    overflow: hidden;
+    display: none;
+    border-top-right-radius: 1em;
+    border-bottom-right-radius: 1em;
 }
+
 #menuUnderSecondOne{
     background-color: lightsteelblue;
     padding: 10px;
     display: flex;
+    position: relative;
+}
+
+#menuSecondThree{
+    list-style-type: none;
+    position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#menuSecondThree a{
+    text-decoration: none;
+    color:black;
+
+}
+#menuSecondThree::before{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    overflow: hidden;
+    width: 100%;
+    background-color: rgba(0,0,0,0.2);
+    height: 0;
+    top: 0;
+    left: 0;
+}
+#menuSecondThree:hover::before{
+    animation: mainMenuAnimation 0.5s forwards;
+
 }
 @keyframes mainMenuAnimation{
     0%{
@@ -107,6 +161,29 @@ body{
     }
     100%{
         width: 100%;
+    }
+}
+@keyframes menuUnderSecondAnimationAfter{
+    0%{
+        left: -100px;
+    }
+    100%{
+        left: 100px;
+    }
+}
+
+@keyframes menuUnderAnimation{
+    0%{
+        height: 0%;
+    }
+    100%{
+        height: 400px;
+    }
+}
+
+@keyframes menuShadowAnimation {
+    0%{
+        
     }
 }
 
