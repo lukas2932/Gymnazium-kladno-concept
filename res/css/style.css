@@ -4,13 +4,16 @@ body{
     font-family: 'Montserrat';
     box-sizing: border-box;
 }
+#main{
+    height: 10000px;
+}
 #menu{
     width: 100vw;
     background-color: lightgrey;
     margin-top: -8px;
     margin-left: -8px;
     position: fixed;
-    z-index: 1;
+    z-index: 2;
 }
 #menu > ul{
     display: flex;
@@ -20,7 +23,7 @@ body{
     width: 35%;
     margin-left: 32.5%;
 }
-#menuSecondOne{
+.MenuSecond{
     list-style-type: none;
     cursor: pointer;
     position: relative;
@@ -29,20 +32,36 @@ body{
     padding-left: 10px;
     padding-right: 10px;
 }
-#menuSecondOne p{
+.MenuSecond p{
     z-index: -1;
+}
+.MenuSecond:hover{
+    box-shadow: 1px 0px 10px;
+    background-color: rgba(0,0,0,0.1);
 }
 #menuSecondHoverOne{
     transition: 0.2s;
 }
 
-#menuUnderSecondOne{
-    position: relative;
+.menuUnderSecondOne{
+    position: absolute;
     z-index: 1;
+    background-color: lightsteelblue;
+    padding: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    display: flex;
+    position: relative;
+    transition: 0.2s;
+    overflow: hidden;
+    font-size: 15px;
 }
 
+.menuUnderSecondOne:hover{
+    margin-left: 4px;
+}
 
-#menuUnderSecondOne::before{
+.menuUnderSecondOne::before{
     content: '';
     position: absolute;
     z-index: -1;
@@ -52,39 +71,22 @@ body{
     height: 100%;
     background-color: lightgrey;
 }
-#menuUnderSecondOne:hover::before{
+.menuUnderSecondOne:hover::before{
     animation:menuUnderSecondAnimation 0.5s forwards ;
 }
-#menuUnderSecondOne::after{
+.menuUnderSecondOne::after{
     content: '';
     position: absolute;
     z-index: -1;
     bottom: 0;
-    left: -100px;
+    left: -120px;
     width: 100%;
     height: 100%;
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid rgba(0,0,0,0.2);
 }
-#menuUnderSecondOne:hover::after{
+.menuUnderSecondOne:hover::after{
     animation:menuUnderSecondAnimationAfter 0.7s forwards;
 }
-
-#menuSecondOne::before{
-    content: '';
-    position: absolute;
-    z-index: -1;
-    overflow: hidden;
-    width: 100%;
-    background-color: rgba(0,0,0,0.2);
-    height: 0;
-    top: 0;
-    left: 0;
-}
-#menuSecondOne:hover::before{
-    animation: mainMenuAnimation 0.5s forwards;
-
-}
-
 
 #menuUnderOne{
     list-style-type: none;
@@ -92,18 +94,27 @@ body{
     position: absolute;
     left: -0.5%;
     height: 0px;
-    overflow: hidden;
     display: none;
     border-top-right-radius: 1em;
     border-bottom-right-radius: 1em;
     border-bottom-left-radius: 1em;
+    width: 100px;
+    overflow: hidden;
+    opacity: 0.9;
 }
-
-#menuUnderSecondOne{
-    background-color: lightsteelblue;
-    padding: 10px;
-    display: flex;
-    position: relative;
+#menuUnderTwo{
+    list-style-type: none;
+    padding-left: 0;
+    position: absolute;
+    left: -0.5%;
+    height: 0px;
+    display: none;
+    border-top-right-radius: 1em;
+    border-bottom-right-radius: 1em;
+    border-bottom-left-radius: 1em;
+    width: 100px;
+    overflow: hidden;
+    opacity: 0.9;
 }
 
 #menuSecondThree{
@@ -112,7 +123,7 @@ body{
     padding-left: 10px;
     padding-right: 10px;
 }
-#menuSecondThree a{
+.MenuSecond a{
     text-decoration: none;
     color:black;
 
@@ -132,29 +143,329 @@ body{
     animation: mainMenuAnimation 0.5s forwards;
 
 }
-@keyframes mainMenuAnimation{
+
+#platno{
+    background: url(/res/img/Kladno_CZ_grammar_school_024.jpg) center center;
+    background-size: cover;
+    margin-left: -8px;
+    width: 100vw;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#canvas{
+    position: absolute;
+    width: 100vw;
+    height: 800px;
+    background-color: rgba(0,0,0,0.5);
+}
+#title{
+    position: absolute;
+    font-size: 64px;
+    color:rgba(255,255,255,0.8);
+    z-index: 1;
+    margin: 0;
+    text-align: center;
+}
+
+#sideMenu{
+    padding: 0;
+    position: absolute;
+    width: 12.5%;
+    margin-left: 87.5%;
+    text-align: center;
+    background-color: rgba(0,0,0,0.15);
+    height: 100vh;
+}
+#sideMenuUl{
+    list-style-type: none;
+    padding: 0;
+    margin-top:5px;
+    position: sticky;
+    top: 50px;
+}
+#sideMenuLiOne{
+    padding: 4px;
+    cursor: pointer;
+    position: relative;
+    padding-top: 0;
+    overflow: hidden;
+    transition: 0.2s;
+}
+#sideMenuLiPOne{
+    margin: 4px;
+    transition: 0.2s;
+    padding: 4px;
+
+}
+#sideMenuUnderUlOne{
+    list-style-type: none;
+    font-size: 14px;
+    padding-left: 0;
+    display: none;
+    height: 0px;
+    position: relative;
+    top: 1px;
+
+}
+#sideMenuUnderLiOne{
+    margin: 5px;
+    position: relative;
+}
+#sideMenuLiP{
+    margin: 8px;
+}
+
+#sideMenuLiTwo{
+    padding: 4px;
+    cursor: pointer;
+    position: relative;
+    padding-top: 0;
+    overflow: hidden;
+    transition: 0.2s;
+}
+#sideMenuUnderUlTwo{
+    list-style-type: none;
+    font-size: 14px;
+    padding-left: 0;
+    display: none;
+    height: 0px;
+    position: relative;
+    top: 1px;
+
+}
+#sideMenuUnderLiTwo{
+    margin: 5px;
+    position: relative;
+}
+
+#sideMenuLiThree{
+    padding: 4px;
+    cursor: pointer;
+    position: relative;
+    padding-top: 0;
+    overflow: hidden;
+    transition: 0.2s;
+}
+#sideMenuUnderUlThree{
+    list-style-type: none;
+    font-size: 14px;
+    padding-left: 0;
+    display: none;
+    height: 0px;
+    position: relative;
+    top: 1px;
+
+}
+#sideMenuUnderLiThree{
+    margin: 5px;
+    position: relative;
+}
+
+#sideMenuLiFour{
+    padding: 4px;
+    cursor: pointer;
+    position: relative;
+    padding-top: 0;
+    overflow: hidden;
+    transition: 0.2s;
+}
+#sideMenuUnderUlFour{
+    list-style-type: none;
+    font-size: 14px;
+    padding-left: 0;
+    display: none;
+    height: 0px;
+    position: relative;
+    top: 1px;
+
+}
+#sideMenuUnderLiFour{
+    margin: 5px;
+    position: relative;
+}
+
+#sideMenuLiFive{
+    padding: 4px;
+    cursor: pointer;
+    position: relative;
+    padding-top: 0;
+    overflow: hidden;
+    transition: 0.2s;
+}
+#sideMenuUnderUlFive{
+    list-style-type: none;
+    font-size: 14px;
+    padding-left: 0;
+    display: none;
+    height: 0px;
+    position: relative;
+    top: 1px;
+
+}
+#sideMenuUnderLiFive{
+    margin: 5px;
+    position: relative;
+}
+
+#sideMenuLiSix{
+    padding: 4px;
+    cursor: pointer;
+    position: relative;
+    padding-top: 0;
+    overflow: hidden;
+    transition: 0.2s;
+}
+#sideMenuUnderUlSix{
+    list-style-type: none;
+    font-size: 14px;
+    padding-left: 0;
+    display: none;
+    height: 0px;
+    position: relative;
+    top: 1px;
+
+}
+#sideMenuUnderLiSix{
+    margin: 5px;
+    position: relative;
+}
+#sideMenuUnderLiSix a{
+    text-decoration: none;
+    color: black;
+}
+
+.sideHover{
+    padding-top: 4px;
+    padding-bottom: 4px;;
+}
+
+.sideHover::before{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    border: 1px solid black transparent;
+    width: 100%;
+    height: 100%;
+}
+.sideHover:hover::before{
+    animation: sideHoverAnimation 0.5s forwards;
+}
+
+@keyframes sideHoverAnimation {
     0%{
-        height: 0%;
-        border-bottom-left-radius: 0.25em;
-        border-bottom-right-radius: 0.25em;
-    }
-    25%{
-        border-bottom-left-radius: 0.5em;
-        border-bottom-right-radius: 0.5em;
-    }
-    50%{
-        border-bottom-left-radius: 0.75em;
-        border-bottom-right-radius: 0.75em;
-    }
-    75%{
-        border-bottom-left-radius: 1em;
-        border-bottom-right-radius: 1em;
+        border: 1px solid black transparent;
     }
     100%{
-        height: 100%;
-        border-bottom-left-radius: 1em;
-        border-bottom-right-radius: 1em;
+        border: 1px solid black;
     }
+}
+
+@keyframes sideMenuAnimationDownOne{
+    0%{
+        height: 0px;
+    }
+    100%{
+        height: 250px;
+    }    
+}
+@keyframes sideMenuAnimationUpOne{
+    0%{
+        height: 250px;
+    }
+    100%{
+        height: 0px;
+    }    
+}
+
+@keyframes sideMenuAnimationDownTwo{
+    0%{
+        height: 0px;
+    }
+    100%{
+        height: 100px;
+    }    
+}
+@keyframes sideMenuAnimationUpTwo{
+    0%{
+        height: 100px;
+    }
+    100%{
+        height: 0px;
+    }    
+}
+
+@keyframes sideMenuAnimationDownThree{
+    0%{
+        height: 0px;
+    }
+    100%{
+        height: 100px;
+    }    
+}
+@keyframes sideMenuAnimationUpThree{
+    0%{
+        height: 100px;
+    }
+    100%{
+        height: 0px;
+    }    
+}
+
+@keyframes sideMenuAnimationDownFour{
+    0%{
+        height: 0px;
+    }
+    100%{
+        height: 50px;
+    }    
+}
+@keyframes sideMenuAnimationUpFour{
+    0%{
+        height: 50px;
+    }
+    100%{
+        height: 0px;
+    }    
+}
+
+@keyframes sideMenuAnimationDownFive{
+    0%{
+        height: 0px;
+    }
+    100%{
+        height: 280px;
+    }    
+}
+@keyframes sideMenuAnimationUpFive{
+    0%{
+        height: 280px;
+    }
+    100%{
+        height: 0px;
+    }    
+}
+
+@keyframes sideMenuAnimationDownSix{
+    0%{
+        height: 0px;
+    }
+    100%{
+        height: 220px;
+    }    
+}
+@keyframes sideMenuAnimationUpSix{
+    0%{
+        height: 220px;
+    }
+    100%{
+        height: 0px;
+    }    
 }
 @keyframes menuUnderSecondAnimation{
     0%{
@@ -166,25 +477,28 @@ body{
 }
 @keyframes menuUnderSecondAnimationAfter{
     0%{
-        left: -100px;
+        left: -120px;
     }
     100%{
-        left: 100px;
+        left: 110px;
     }
 }
 
 @keyframes menuUnderAnimation{
     0%{
-        height: 0%;
+        height: 0;
     }
     100%{
-        height: 400px;
+        height: 350px;
     }
 }
 
-@keyframes menuShadowAnimation {
+@keyframes menuUnderAnimationUp{
     0%{
-        
+        height: 350px;
+    }
+    100%{
+        height: 0;
     }
 }
 
