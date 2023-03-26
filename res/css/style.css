@@ -145,7 +145,7 @@ body{
 }
 
 #platno{
-    background: url(/res/img/Kladno_CZ_grammar_school_024.jpg) center center;
+    background: url(../img/Kladno_CZ_grammar_school_024.jpg) center center;
     background-size: cover;
     margin-left: -8px;
     width: 100vw;
