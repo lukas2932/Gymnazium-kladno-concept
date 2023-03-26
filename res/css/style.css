@@ -371,12 +371,12 @@ body{
         height: 0px;
     }
     100%{
-        height: 250px;
+        height: 150px;
     }    
 }
 @keyframes sideMenuAnimationUpOne{
     0%{
-        height: 250px;
+        height: 150px;
     }
     100%{
         height: 0px;
