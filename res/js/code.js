@@ -40,6 +40,12 @@ const sideMenuLiFive = document.getElementById("sideMenuLiFive");
 const sideMenuUnderUlSix = document.getElementById("sideMenuUnderUlSix");
 const sideMenuLiSix = document.getElementById("sideMenuLiSix");
 
+const end_a_1 = document.getElementById("end_a_1");
+const end_a_2 = document.getElementById("end_a_2");
+const end_a_3 = document.getElementById("end_a_3");
+const end_a_4 = document.getElementById("end_a_4");
+const end_a_5 = document.getElementById("end_a_5");
+
 
 function menuSecondAppear(){
     menuUnderOne.style.display = "block";
@@ -138,4 +144,59 @@ sideMenuLiSix.onmouseover = () => {
 sideMenuLiSix.onmouseout = () => {
     sideMenuUnderUlSix.style.animation = "sideMenuAnimationUpSix 0.4s forwards";
     sideMenuLiSix.style.backgroundColor = "rgba(0,0,0,0)";
+}
+
+
+end_a_1.onmouseover = () => {
+    end_a_1.style.setProperty('--animationBefore', 'partner_before_up 0.3s forwards');
+    end_a_1.style.setProperty('--animationAfter', 'partner_after_up 0.3s forwards');
+}
+
+end_a_1.onmouseout = () => {
+    end_a_1.style.setProperty('--animationBefore', 'partner_before_down 0.3s forwards');
+    end_a_1.style.setProperty('--animationAfter', 'partner_after_down 0.3s forwards');
+}
+
+
+end_a_2.onmouseover = () => {
+    end_a_2.style.setProperty('--animationBefore', 'partner_before_up 0.3s forwards');
+    end_a_2.style.setProperty('--animationAfter', 'partner_after_up 0.3s forwards');
+}
+
+end_a_2.onmouseout = () => {
+    end_a_2.style.setProperty('--animationBefore', 'partner_before_down 0.3s forwards');
+    end_a_2.style.setProperty('--animationAfter', 'partner_after_down 0.3s forwards');
+}
+
+
+end_a_3.onmouseover = () => {
+    end_a_3.style.setProperty('--animationBefore', 'partner_before_up 0.3s forwards');
+    end_a_3.style.setProperty('--animationAfter', 'partner_after_up 0.3s forwards');
+}
+
+end_a_3.onmouseout = () => {
+    end_a_3.style.setProperty('--animationBefore', 'partner_before_down 0.3s forwards');
+    end_a_3.style.setProperty('--animationAfter', 'partner_after_down 0.3s forwards');
+}
+
+
+end_a_4.onmouseover = () => {
+    end_a_4.style.setProperty('--animationBefore', 'partner_before_up 0.3s forwards');
+    end_a_4.style.setProperty('--animationAfter', 'partner_after_up 0.3s forwards');
+}
+
+end_a_4.onmouseout = () => {
+    end_a_4.style.setProperty('--animationBefore', 'partner_before_down 0.3s forwards');
+    end_a_4.style.setProperty('--animationAfter', 'partner_after_down 0.3s forwards');
+}
+
+
+end_a_5.onmouseover = () => {
+    end_a_5.style.setProperty('--animationBefore', 'partner_before_up 0.3s forwards');
+    end_a_5.style.setProperty('--animationAfter', 'partner_after_up 0.3s forwards');
+}
+
+end_a_5.onmouseout = () => {
+    end_a_5.style.setProperty('--animationBefore', 'partner_before_down 0.3s forwards');
+    end_a_5.style.setProperty('--animationAfter', 'partner_after_down 0.3s forwards');
 }
