@@ -4,9 +4,6 @@ body{
     font-family: 'Montserrat';
     box-sizing: border-box;
 }
-#main{
-    height: 10000px;
-}
 #menu{
     width: 100vw;
     background-color: lightgrey;
@@ -114,7 +111,7 @@ body{
     border-bottom-left-radius: 1em;
     width: 100px;
     overflow: hidden;
-    opacity: 0.9;
+    opacity: 0.95;
 }
 
 #menuSecondThree{
@@ -176,12 +173,12 @@ body{
     margin-left: 87.5%;
     text-align: center;
     background-color: rgba(0,0,0,0.15);
-    height: 100vh;
 }
 #sideMenuUl{
     list-style-type: none;
     padding: 0;
     margin-top:5px;
+    margin-right: 4px;
     position: sticky;
     top: 50px;
 }
@@ -211,6 +208,9 @@ body{
 }
 #sideMenuUnderLiOne{
     margin: 5px;
+    margin-left: 0;
+    padding: 4px;
+    margin-left: 0;
     position: relative;
 }
 #sideMenuLiP{
@@ -237,6 +237,8 @@ body{
 }
 #sideMenuUnderLiTwo{
     margin: 5px;
+    margin-left: 0;
+    padding: 4px;
     position: relative;
 }
 
@@ -260,6 +262,8 @@ body{
 }
 #sideMenuUnderLiThree{
     margin: 5px;
+    margin-left: 0;
+    padding: 4px;
     position: relative;
 }
 
@@ -283,6 +287,8 @@ body{
 }
 #sideMenuUnderLiFour{
     margin: 5px;
+    margin-left: 0;
+    padding: 4px;
     position: relative;
 }
 
@@ -306,6 +312,8 @@ body{
 }
 #sideMenuUnderLiFive{
     margin: 5px;
+    margin-left: 0;
+    padding: 4px;
     position: relative;
 }
 
@@ -329,6 +337,8 @@ body{
 }
 #sideMenuUnderLiSix{
     margin: 5px;
+    margin-left: 0;
+    padding: 4px;
     position: relative;
 }
 #sideMenuUnderLiSix a{
@@ -337,8 +347,7 @@ body{
 }
 
 .sideHover{
-    padding-top: 4px;
-    padding-bottom: 4px;;
+
 }
 
 .sideHover::before{
@@ -501,3 +510,331 @@ body{
     }
 }
 
+
+@media (max-width:2000px){
+
+    @keyframes sideMenuAnimationDownFive{
+        0%{
+            height: 0px;
+        }
+        100%{
+            height: 310px;
+        }    
+    }
+    @keyframes sideMenuAnimationUpFive{
+        0%{
+            height: 310px;
+        }
+        100%{
+            height: 0px;
+        }    
+    }
+
+    @keyframes sideMenuAnimationDownOne{
+        0%{
+            height: 0px;
+        }
+        100%{
+            height: 170px;
+        }    
+    }
+    @keyframes sideMenuAnimationUpOne{
+        0%{
+            height: 170px;
+        }
+        100%{
+            height: 0px;
+        }    
+    }
+
+}
+
+
+@media (max-width:1800px){
+
+    @keyframes sideMenuAnimationDownFive{
+        0%{
+            height: 0px;
+        }
+        100%{
+            height: 330px;
+        }    
+    }
+    @keyframes sideMenuAnimationUpFive{
+        0%{
+            height: 330px;
+        }
+        100%{
+            height: 0px;
+        }    
+    }
+
+}
+
+
+@media (max-width:1660px){
+
+    @keyframes sideMenuAnimationDownFive{
+        0%{
+            height: 0px;
+        }
+        100%{
+            height: 360px;
+        }    
+    }
+    @keyframes sideMenuAnimationUpFive{
+        0%{
+            height: 360px;
+        }
+        100%{
+            height: 0px;
+        }    
+    }
+
+}
+
+
+@media (max-width:1605px){
+
+    @keyframes sideMenuAnimationDownOne{
+        0%{
+            height: 0px;
+        }
+        100%{
+            height: 175px;
+        }    
+    }
+    @keyframes sideMenuAnimationUpOne{
+        0%{
+            height: 175px;
+        }
+        100%{
+            height: 0px;
+        }    
+    }
+    
+}
+
+
+@media (max-width:1315px){
+
+    @keyframes sideMenuAnimationDownOne{
+        0%{
+            height: 0px;
+        }
+        100%{
+            height: 190px;
+        }    
+    }
+    @keyframes sideMenuAnimationUpOne{
+        0%{
+            height: 190px;
+        }
+        100%{
+            height: 0px;
+        }    
+    }
+
+    @keyframes sideMenuAnimationDownFive{
+        0%{
+            height: 0px;
+        }
+        100%{
+            height: 340px;
+        }    
+    }
+    @keyframes sideMenuAnimationUpFive{
+        0%{
+            height: 340px;
+        }
+        100%{
+            height: 0px;
+        }    
+    }
+    
+}
+
+
+@media (max-width:1300px){
+
+    @keyframes sideMenuAnimationDownOne{
+        0%{
+            height: 0px;
+        }
+        100%{
+            height: 225px;
+        }    
+    }
+    @keyframes sideMenuAnimationUpOne{
+        0%{
+            height: 225px;
+        }
+        100%{
+            height: 0px;
+        }    
+    }
+    
+}
+
+
+@media (max-width:1300px){
+
+    @keyframes sideMenuAnimationDownOne{
+        0%{
+            height: 0px;
+        }
+        100%{
+            height: 235px;
+        }    
+    }
+    @keyframes sideMenuAnimationUpOne{
+        0%{
+            height: 235px;
+        }
+        100%{
+            height: 0px;
+        }    
+    }
+    
+}
+
+
+@media (max-width:1255px){
+
+    @keyframes sideMenuAnimationDownOne{
+        0%{
+            height: 0px;
+        }
+        100%{
+            height: 245px;
+        }    
+    }
+    @keyframes sideMenuAnimationUpOne{
+        0%{
+            height: 245px;
+        }
+        100%{
+            height: 0px;
+        }    
+    }
+
+    @keyframes sideMenuAnimationDownTwo{
+        0%{
+            height: 0px;
+        }
+        100%{
+            height: 120px;
+        }    
+    }
+    @keyframes sideMenuAnimationUpTwo{
+        0%{
+            height: 120px;
+        }
+        100%{
+            height: 0px;
+        }    
+    }
+    
+}
+
+
+@media (max-width:1220px){
+
+    @keyframes sideMenuAnimationDownFive{
+        0%{
+            height: 0px;
+        }
+        100%{
+            height: 380px;
+        }    
+    }
+    @keyframes sideMenuAnimationUpFive{
+        0%{
+            height: 380px;
+        }
+        100%{
+            height: 0px;
+        }    
+    }
+    
+}
+
+
+@media (max-width:1150px){
+
+    @keyframes sideMenuAnimationDownTwo{
+        0%{
+            height: 0px;
+        }
+        100%{
+            height: 130px;
+        }    
+    }
+    @keyframes sideMenuAnimationUpTwo{
+        0%{
+            height: 130px;
+        }
+        100%{
+            height: 0px;
+        }    
+    }
+
+    @keyframes sideMenuAnimationDownThree{
+        0%{
+            height: 0px;
+        }
+        100%{
+            height: 110px;
+        }    
+    }
+    @keyframes sideMenuAnimationUpThree{
+        0%{
+            height: 110px;
+        }
+        100%{
+            height: 0px;
+        }    
+    }
+
+    @keyframes sideMenuAnimationDownFour{
+        0%{
+            height: 0px;
+        }
+        100%{
+            height: 70px;
+        }    
+    }
+    @keyframes sideMenuAnimationUpFour{
+        0%{
+            height: 70px;
+        }
+        100%{
+            height: 0px;
+        }    
+    }
+
+    @keyframes sideMenuAnimationDownFive{
+        0%{
+            height: 0px;
+        }
+        100%{
+            height: 415px;
+        }    
+    }
+    @keyframes sideMenuAnimationUpFive{
+        0%{
+            height: 415px;
+        }
+        100%{
+            height: 0px;
+        }    
+    }
+    
+}
+
+
+@media (max-width:1150px){
+    #sideMenu{
+        display: none;
+    }
+}
