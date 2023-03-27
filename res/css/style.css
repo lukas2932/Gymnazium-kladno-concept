@@ -356,7 +356,6 @@ body{
 .sideHover:hover::before{
     animation: sideHoverAnimation 0.5s forwards;
 }
-
 @keyframes sideHoverAnimation {
     0%{
         border: 1px solid black transparent;
