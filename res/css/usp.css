@@ -9,12 +9,12 @@
     position: absolute;
     left:500px;
 	top:350px;
-	width:600px;
-	height: 600px;
+	
 }
 .f{
     border: 1px solid black;
     border-radius: 25px;
     width: 750px;
     padding: 25px;
+    margin: 25px;
 }
