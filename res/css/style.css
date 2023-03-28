@@ -4,6 +4,10 @@ body{
     font-family: 'Montserrat';
     box-sizing: border-box;
 }
+::selection{
+    background-color: white;
+    color: rgba(0,0,0,0.8)
+}
 #menu{
     width: 100vw;
     background-color: lightgrey;
