@@ -33,13 +33,13 @@
 #textOne{
     border:1px solid rgba(0,0,0,0.2);
     padding: 10px;
-    max-width: 100%;
+    width: 50%;
     transition: 0.2s;
     cursor: pointer;
 }
 
 #textOne:hover{
-    background-color: rgba(0,0,0,0.03);
+    background-color: rgba(0,0,0,0.02);
 }
 #textTwo{
     border:1px solid rgba(0,0,0,0.2);
@@ -294,24 +294,67 @@
 #labels_title{
     width: 100%;
     height: 65px;
-    background-color: rgb(2, 2, 202);
-    color: rgb(229, 225, 225);
+    background-color: lightsteelblue;
+    color: rgba(0,0,0,0.8);
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
+    margin-bottom: 30px;
+    cursor: pointer;
 
 }
 #labels_title h2{
-    margin-bottom: 4px;
+    margin-bottom: 8px;
     padding-top:4px;
-    padding-left: 4px;
+    padding-left: 10px;
     position: relative;
 }
 #labels_title p{
     margin-top: 0;
     display: flex;
     justify-content: left;
-    padding-left: 4px;
+    padding-left: 10px;
+    padding-bottom: 8px;
+}
+
+#end_last{
+    width: 100vw;
+    height:30px;
+    background-color: rgba(0,0,0,0.4);
+    margin-left: -8px;
+    margin-top:8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#last{
+    color: rgba(0,0,0,0.6);
+
+}
+#universal_hover{
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding-bottom: 2px;
+    width: 70%;
+    margin-left: 15%;
+    transition: 0.6s;
+    color: rgba(0,0,0,0.8);
+}
+#universal_hover:hover{
+    transform: scale(1.005);
+    color: rgba(0,0,0,0.9);
+}
+#universal_hover::before{
+    content: '';
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    border-bottom: 2px solid rgba(0,0,0,0.3);
+    animation: var(--Universal_animation, none);
 }
 
 @keyframes partner_before_up {
@@ -405,3 +448,22 @@
         background-color: none;
     }
 }
+
+@keyframes universal_hover_animation_forwards {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes universal_hover_animation_backwards {
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
