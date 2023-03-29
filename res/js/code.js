@@ -40,11 +40,23 @@ const sideMenuLiFive = document.getElementById("sideMenuLiFive");
 const sideMenuUnderUlSix = document.getElementById("sideMenuUnderUlSix");
 const sideMenuLiSix = document.getElementById("sideMenuLiSix");
 
+const hamburger = document.getElementById("hamburger");
+const menu_hamburger = document.getElementById("menu_hamburger");
+const hamburger_ul_ul = document.getElementById("hamburger_ul_ul");
+const hamburger_ul_ul_2 = document.getElementById("hamburger_ul_ul_2");
+const menu_hamburger_ul_li_1 = document.getElementById("menu_hamburger_ul_li_1");
+const menu_hamburger_ul_li_2 = document.getElementById("menu_hamburger_ul_li_2");
+const menu_hamburger_ul_li_3 = document.getElementById("menu_hamburger_ul_li_3");
+const menu_hamburger_ul_li_4 = document.getElementById("menu_hamburger_ul_li_4");
+const menu_hamburger_ul_li_5 = document.getElementById("menu_hamburger_ul_li_5");
+
 const end_a_1 = document.getElementById("end_a_1");
 const end_a_2 = document.getElementById("end_a_2");
 const end_a_3 = document.getElementById("end_a_3");
 const end_a_4 = document.getElementById("end_a_4");
 const end_a_5 = document.getElementById("end_a_5");
+
+let resultNum = false;
 
 
 function menuSecondAppear(){
@@ -200,3 +212,62 @@ end_a_5.onmouseout = () => {
     end_a_5.style.setProperty('--animationBefore', 'partner_before_down 0.3s forwards');
     end_a_5.style.setProperty('--animationAfter', 'partner_after_down 0.3s forwards');
 }
+
+
+menu_hamburger_ul_li_1.onmouseover = () => {
+    menu_hamburger_ul_li_1.style.setProperty('--hamburger_li_animation','li_hamburger_animation_up 0.3s forwards');
+    hamburger_ul_ul.style.display = "block";
+    hamburger_ul_ul.style.animation = "hamburger_slideDown_animation 0.8s forwards";
+    menu_hamburger_ul_li_1.style.backgroundColor = "rgba(0,0,0,0.1)"
+}
+menu_hamburger_ul_li_1.onmouseout = () => {
+    menu_hamburger_ul_li_1.style.setProperty('--hamburger_li_animation','li_hamburger_animation_down 0.3s forwards')
+    hamburger_ul_ul.style.display = "none";
+    menu_hamburger_ul_li_1.style.backgroundColor = "rgba(0,0,0,0)";
+    hamburger_ul_ul_2.style.animation = "hamburger_slideUp_animation 0.8s forwards";
+}
+
+
+menu_hamburger_ul_li_2.onmouseover = () => {
+    menu_hamburger_ul_li_2.style.setProperty('--hamburger_li_animation','li_hamburger_animation_up 0.3s forwards')
+}
+menu_hamburger_ul_li_2.onmouseout = () => {
+    menu_hamburger_ul_li_2.style.setProperty('--hamburger_li_animation','li_hamburger_animation_down 0.3s forwards')
+}
+
+
+menu_hamburger_ul_li_3.onmouseover = () => {
+    menu_hamburger_ul_li_3.style.setProperty('--hamburger_li_animation','li_hamburger_animation_up 0.3s forwards');
+    hamburger_ul_ul_2.style.display = "block";
+    hamburger_ul_ul_2.style.animation = "hamburger_slideDown_animation 0.8s forwards";
+    menu_hamburger_ul_li_3.style.backgroundColor = "rgba(0,0,0,0.1)"
+}
+menu_hamburger_ul_li_3.onmouseout = () => {
+    menu_hamburger_ul_li_3.style.setProperty('--hamburger_li_animation','li_hamburger_animation_down 0.3s forwards')
+    hamburger_ul_ul_2.style.animation = "hamburger_slideUp_animation 0.8s forwards";
+    menu_hamburger_ul_li_3.style.backgroundColor = "rgba(0,0,0,0)";
+    hamburger_ul_ul_2.style.display = "none";
+}
+
+
+menu_hamburger_ul_li_4.onmouseover = () => {
+    menu_hamburger_ul_li_4.style.setProperty('--hamburger_li_animation','li_hamburger_animation_up 0.3s forwards')
+}
+menu_hamburger_ul_li_4.onmouseout = () => {
+    menu_hamburger_ul_li_4.style.setProperty('--hamburger_li_animation','li_hamburger_animation_down 0.3s forwards')
+}
+
+menu_hamburger_ul_li_5.onmouseover = () => {
+    menu_hamburger_ul_li_5.style.setProperty('--hamburger_li_animation','li_hamburger_animation_up 0.3s forwards')
+}
+menu_hamburger_ul_li_5.onmouseout = () => {
+    menu_hamburger_ul_li_5.style.setProperty('--hamburger_li_animation','li_hamburger_animation_down 0.3s forwards')
+}
+
+hamburger.addEventListener('click',() => {
+    menu_hamburger.style.left = "0px";
+    if(!resultNum){
+
+    }
+
+})
