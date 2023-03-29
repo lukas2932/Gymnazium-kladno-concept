@@ -15,6 +15,9 @@ body{
     margin-left: -8px;
     position: fixed;
     z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 #menu > ul{
     display: flex;
@@ -22,7 +25,6 @@ body{
     padding-left: 0;
     justify-content: space-between;
     width: 35%;
-    margin-left: 32.5%;
 }
 .MenuSecond{
     list-style-type: none;
@@ -177,6 +179,9 @@ body{
     margin-left: 87.5%;
     text-align: center;
     background-color: rgba(0,0,0,0.15);
+}
+#sideMenuTwo{
+    display: none;
 }
 #sideMenuUl{
     list-style-type: none;
@@ -833,12 +838,54 @@ body{
             height: 0px;
         }    
     }
-    
-}
+    html,
+    body{
+        font-size: 12px;
+    }
 
-
-@media (max-width:1150px){
     #sideMenu{
         display: none;
     }
+    #labels{
+        width: 100vw;
+    }
+    #menu{
+        justify-content: left;
+    }
+    .menuUnderSecondOne{
+        font-size: 12px;;
+    }
+    
 }
+@media (max-width:320px){
+    html,
+    body{
+        font-size: 12px;
+    }
+    #title{
+        font-size: 32px;;
+    }
+    #menu{
+        justify-content: center;
+        display: block;
+    }
+    #menu > ul{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        display: none
+    }
+    #menuUnderOne{
+        opacity: 1;
+        z-index: 1;
+    }
+    #sideMenuTwo{
+        display: block;
+        z-index: 1;
+        position: relative;
+    }
+
+}
+
+
+
