@@ -156,6 +156,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: -1;
 }
 #canvas{
     position: absolute;
@@ -518,6 +519,12 @@ body{
         height: 0;
     }
 }
+@media (max-width:100vw){
+    #hamburger_menu{
+        display: none;
+    }
+
+}
 
 
 @media (max-width:2000px){
@@ -538,6 +545,9 @@ body{
             height: 0px;
         }    
     }
+    #hamburger_menu{
+        display: none;
+    }
 
     @keyframes sideMenuAnimationDownOne{
         0%{
@@ -554,6 +564,9 @@ body{
         100%{
             height: 0px;
         }    
+    }
+    #hamburger_menu{
+        display: none;
     }
 
 }
@@ -577,6 +590,9 @@ body{
             height: 0px;
         }    
     }
+    #hamburger_menu{
+        display: none;
+    }
 
 }
 
@@ -599,6 +615,9 @@ body{
             height: 0px;
         }    
     }
+    #hamburger_menu{
+        display: none;
+    }
 
 }
 
@@ -620,6 +639,9 @@ body{
         100%{
             height: 0px;
         }    
+    }
+    #hamburger_menu{
+        display: none;
     }
     
 }
@@ -660,6 +682,9 @@ body{
             height: 0px;
         }    
     }
+    #hamburger_menu{
+        display: none;
+    }
     
 }
 
@@ -682,6 +707,9 @@ body{
             height: 0px;
         }    
     }
+    #hamburger_menu{
+        display: none;
+    }
     
 }
 
@@ -703,6 +731,9 @@ body{
         100%{
             height: 0px;
         }    
+    }
+    #hamburger_menu{
+        display: none;
     }
     
 }
@@ -743,6 +774,9 @@ body{
             height: 0px;
         }    
     }
+    #hamburger_menu{
+        display: none;
+    }
     
 }
 
@@ -764,6 +798,9 @@ body{
         100%{
             height: 0px;
         }    
+    }
+    #hamburger_menu{
+        display: none;
     }
     
 }
@@ -855,9 +892,12 @@ body{
     .menuUnderSecondOne{
         font-size: 12px;;
     }
-    
+    #hamburger_menu{
+        display: none;
+    }
 }
-@media (max-width:320px){
+@media (max-width:450px){
+    
     html,
     body{
         font-size: 12px;
@@ -883,6 +923,12 @@ body{
         display: block;
         z-index: 1;
         position: relative;
+    }
+    #canvas, #platno{
+        height: 600px;
+    }
+    #hamburger_menu{
+        display: flex;
     }
 
 }
