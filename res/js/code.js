@@ -42,8 +42,11 @@ const sideMenuLiSix = document.getElementById("sideMenuLiSix");
 
 const hamburger = document.getElementById("hamburger");
 const menu_hamburger = document.getElementById("menu_hamburger");
+const menu_hamburger_ul = document.getElementById("menu_hamburger_ul");
 const hamburger_ul_ul = document.getElementById("hamburger_ul_ul");
 const hamburger_ul_ul_2 = document.getElementById("hamburger_ul_ul_2");
+const hamburger_1 = document.getElementById("hamburger_1");
+const hamburger_2 = document.getElementById("hamburger_2");
 const menu_hamburger_ul_li_1 = document.getElementById("menu_hamburger_ul_li_1");
 const menu_hamburger_ul_li_2 = document.getElementById("menu_hamburger_ul_li_2");
 const menu_hamburger_ul_li_3 = document.getElementById("menu_hamburger_ul_li_3");
@@ -264,10 +267,20 @@ menu_hamburger_ul_li_5.onmouseout = () => {
     menu_hamburger_ul_li_5.style.setProperty('--hamburger_li_animation','li_hamburger_animation_down 0.3s forwards')
 }
 
-hamburger.addEventListener('click',() => {
-    menu_hamburger.style.left = "0px";
-    if(!resultNum){
 
-    }
-
+hamburger_1.addEventListener('click', () => {
+    menu_hamburger.style.animation = "hamburger_icon_toggle_up 0.8s forwards";
+    hamburger_1.style.display = "none";
+    hamburger_2.style.display = "flex";
 })
+
+hamburger_2.addEventListener('click', () => {
+    menu_hamburger.style.animation = "hamburger_icon_toggle_down 0.8s forwards";
+    hamburger_1.style.display = "flex";
+    hamburger_2.style.display = "none";
+})
+
+
+let hamHeight = window.getComputedStyle(menu_hamburger_ul, 'height');
+
+console.log(hamHeight.height)
