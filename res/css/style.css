@@ -156,7 +156,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: -1;
+    z-index: 1;
 }
 #canvas{
     position: absolute;
@@ -168,18 +168,9 @@ body{
     position: absolute;
     font-size: 64px;
     color:rgba(255,255,255,0.8);
-    z-index: 1;
     margin: 0;
     text-align: center;
-}
-
-#sideMenu{
-    padding: 0;
-    position: absolute;
-    width: 12.5%;
-    margin-left: 87.5%;
-    text-align: center;
-    background-color: rgba(0,0,0,0.15);
+    z-index: 1;
 }
 #sideMenuTwo{
     display: none;
@@ -191,6 +182,7 @@ body{
     margin-right: 4px;
     position: sticky;
     top: 50px;
+    margin-bottom: 0;
 }
 #sideMenuLiOne{
     padding: 4px;
@@ -883,9 +875,6 @@ body{
     #sideMenu{
         display: none;
     }
-    #labels{
-        width: 100vw;
-    }
     #menu{
         justify-content: left;
     }
@@ -903,7 +892,8 @@ body{
         font-size: 12px;
     }
     #title{
-        font-size: 32px;;
+        color:rgba(255,255,255,1);
+        font-size: 32px;
     }
     #menu{
         justify-content: center;
@@ -930,6 +920,13 @@ body{
     #hamburger_menu{
         display: flex;
     }
+    #textOne{
+        width: 90% !important;
+    }
+    #labels_title{
+        width: 95% !important;
+    }
+    
 
 }
 
