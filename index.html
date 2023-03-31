@@ -25,7 +25,7 @@
             <section id="menu_hamburger">
                 <ul id="menu_hamburger_ul">
                     <li id="menu_hamburger_ul_li_1">
-                        <p id="hamburger_p">Úvod</p>
+                        <p id="hamburger_p"><a id="menuA" href="index.html">Úvod</a></p>
                         <ul id="hamburger_ul_ul">
                             <li id="hamburger_ul_ul_li">O škole</li>
                             <li id="hamburger_ul_ul_li">Kontakty</li>
@@ -37,10 +37,10 @@
                         </ul>
                     </li>
                     <li id="menu_hamburger_ul_li_2">
-                      <p id="hamburger_p"> Aktualně</p>
+                      <p id="hamburger_p"><a id="menuA" href="aktualne.html">Aktualně</a></p>
                     </li>
                     <li id="menu_hamburger_ul_li_3">
-                       <p id="hamburger_p"> Výuka</p>
+                       <p id="hamburger_p"> <a id="menuA" href="vyuka.html">Výuka</a></p>
                        <ul id="hamburger_ul_ul_2">
                         <li id="hamburger_ul_ul_li_2">Studijní plány</li>
                         <li id="hamburger_ul_ul_li_2">Profesorský sbor</li>
@@ -50,10 +50,13 @@
                     </ul> 
                     </li>
                     <li id="menu_hamburger_ul_li_4">
-                        <p id="hamburger_p">Úspěchy</p> 
+                        <p id="hamburger_p"><a id="menuA" href="uspechy.html">Úspěchy</a></p> 
                     </li>
                     <li id="menu_hamburger_ul_li_5">
-                        <p id="hamburger_p"> Fotogalerie</p> 
+                        <p id="hamburger_p"><a id="menuA" href="fotogalerie.html">Fotogalerie</a></p> 
+                    </li>
+                    <li id="menu_hamburger_ul_li_6">
+                        <p id="hamburger_p"><a id="menuA" href="prijmacky.html">Přijímačky </a></p> 
                     </li>
                 </ul>
             </section>
@@ -61,7 +64,7 @@
         <header id="menu">
             <ul id="menuUl">
                 <li id="menuSecondOne" class="MenuSecond">
-                    <p id="menuSecondHoverOne">Úvod</p>
+                    <p id="menuSecondHoverOne"><a id="menuA" href="index.html">Úvod</a></p>
                     <ul id="menuUnderOne">
                         <li id="menuUnderSecondOneOne" class="menuUnderSecondOne">O škole</li>
                         <li id="menuUnderSecondOneTwo" class="menuUnderSecondOne">Kontakty</li>
@@ -86,13 +89,13 @@
                     </ul>
                 </li>
                 <li id="menuSecondFour" class="MenuSecond">
-                    <p id="menuSecondHoverOne"><a href="uspechy.html">Úspěchy</a></p>
+                    <p id="menuSecondHoverOne"><a id="menuA" href="uspechy.html">Úspěchy</a></p>
                 </li>
                 <li id="menuSecondFive" class="MenuSecond">
-                    <p>Fotogalerie</p>
+                    <p><a href="fotogalerie.html">Fotogalerie</a></p>
                 </li>
                 <li id="menuSecondSix" class="MenuSecond">
-                    <p>Menu</p>
+                    <p id="menuSecondHoverOne"><a id="menuA" href="prijmacky.html">Přijímačky</a></p>
                 </li>
                 <li id="menuSecondSeven" class="MenuSecond">
                     <p>Menu</p>
@@ -100,7 +103,7 @@
             </ul>
         </header>
         <section id="platno">
-            <h1 id="title">Gymnazium <br> Kladno</h1>
+            <h1 id="title">Gymnazium <br> Kladno <br><span id="title_span">Úvod</span></h1>
             <footer id="canvas"></footer>
         </section>
         <header id="text">
@@ -171,10 +174,35 @@
                     <p>Vítejte na stránkách Gymnázia Kladno</p>
                 </article>
                 <article id="textOne">
-                    <h1 id="universal_hover">Přijímací řízení pro školní rok 2023/2024</h1>
+                    <h2 id="universal_hover"><a id="menuA" href="prijmacky.html">Přijímací řízení pro školní rok 2023/2024</a></h2>
                 </article>
-                <article id="textOne">
-                    <h1 id="universal_hover">Přijímací řízení pro školní rok 2023/2024</h1>
+                <article id="textOne" class="secondText">
+                    <article id="textOneArticle">
+                        <img src="./res/img/prf_new.jpg" alt="" srcset="">
+                        <p>Škole byl udělen název:Fakultní škola Univerzity Karlovy v Praze, Přírodovědecké fakulty</p>
+                        <a href="">Více informací zde</a>
+                    </article>
+                    <article id="textOneArticle">
+                        <img src="./res/img/kev.jpg" alt="" srcset="">
+                        <p>Škola udržitelného rozvoje středočeského kraje II. stupně. Titul propůjčen na léta 2016–2018</p>
+                        <a href="">Více informací zde</a>
+                    </article>
+                    <article id="textOneArticle">
+                        <img style="height: 25px" src="./res/img/kraj.gif" alt="" srcset="">
+                        <p>Zřizovatel: Středočeský kraj, Zborovská 11, 150 21 Praha 5</p>                        
+                        <a href="https://www.kr-stredocesky.cz/">www.kr-stredocesky.cz</a>
+                    </article>
+                    <article id="textOneArticle">
+                        <img src="./res/img/bio_fs_logo.png" alt="" srcset="">
+                        <p>Fakultní škola fakulty biomedicínského inženýrství ČVUT</p>                        
+                        <a href="https://www.kr-stredocesky.cz/">více informací</a>
+                    </article>
+                    <article id="textOneArticle">
+                        <img style="width: 80%" src="./res/img/logo_barevne-4.png" alt="" srcset="">
+                    </article>
+                    <article id="textOneArticle">
+                        <img style="width: 80%" src="./res/img/oceneni.gif" alt="" srcset="">
+                    </article>
                 </article>
             </section>
         </header>
