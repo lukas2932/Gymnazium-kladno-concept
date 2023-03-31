@@ -10,6 +10,7 @@
     text-align: center;
     background-color: lightgrey; 
     z-index: 2 !important;
+    border-radius: 0.5em;
 
 }
 #sideMenuUl{
@@ -33,12 +34,14 @@
     gap: 10px;
     height: 100%;
     z-index: 1;
+    font-size: 13px;
 }
 #textOne{
     border:1px solid rgba(0,0,0,0.2);
     padding: 10px;
     width: 50%;
     transition: 0.2s;
+    border-radius: 0.5em;
 }
 
 #textOne:hover{
@@ -502,6 +505,39 @@
 }
 #hamburger_ul_ul_li_2{
     padding: 4px;
+}
+.sideHover{
+    transition: 0.2s;
+    border-radius: 0.25em;
+}
+.sideHover:hover{
+    background-color: rgba(0,0,0,0.1);
+}
+.secondText{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+#textOneArticle{
+    max-width: 33.33%;
+    height: auto;
+    font-size: 11px;
+    margin-bottom: 12px;
+
+}
+#textOneArticle a{
+    text-decoration: none;
+}
+#textOneArticle img{
+    width: 100px;
+    height: 50px;
+}
+#textOneDate{
+    opacity: 0.6;
+}
+#textOneTeacher{
+    
 }
 @keyframes partner_before_up {
     0%{
