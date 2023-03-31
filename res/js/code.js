@@ -40,6 +40,15 @@ const sideMenuLiFive = document.getElementById("sideMenuLiFive");
 const sideMenuUnderUlSix = document.getElementById("sideMenuUnderUlSix");
 const sideMenuLiSix = document.getElementById("sideMenuLiSix");
 
+const sideMenuUnderLiOne = document.getElementById("sideMenuUnderLiOne")
+const sideMenuUnderLiTwo = document.getElementById("sideMenuUnderLiTwo")
+const sideMenuUnderLiThree = document.getElementById("sideMenuUnderLiThree")
+const sideMenuUnderLiFour = document.getElementById("sideMenuUnderLiFour")
+const sideMenuUnderLiFive = document.getElementById("sideMenuUnderLiFive")
+const sideMenuUnderLiSix = document.getElementById("sideMenuUnderLiSix")
+
+const Ahover = document.querySelectorAll("a",".Ahover");
+
 const hamburger = document.getElementById("hamburger");
 const menu_hamburger = document.getElementById("menu_hamburger");
 const menu_hamburger_ul = document.getElementById("menu_hamburger_ul");
@@ -279,8 +288,3 @@ hamburger_2.addEventListener('click', () => {
     hamburger_1.style.display = "flex";
     hamburger_2.style.display = "none";
 })
-
-
-let hamHeight = window.getComputedStyle(menu_hamburger_ul, 'height');
-
-console.log(hamHeight.height)
