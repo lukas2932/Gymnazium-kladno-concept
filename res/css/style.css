@@ -161,7 +161,7 @@ body{
     background-size: cover;
     margin-left: -8px;
     width: 100vw;
-    height: 800px;
+    height: 900px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -170,8 +170,8 @@ body{
 #canvas{
     position: absolute;
     width: 100vw;
-    height: 800px;
-    background-color: rgba(0,0,0,0.5);
+    height: 900px;
+    background-color: rgba(0,0,0,0.75);
 }
 #title{
     position: absolute;
