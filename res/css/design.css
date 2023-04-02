@@ -234,6 +234,9 @@
     animation: var(--animationAfter, none);
 
 }
+#end_a_5{
+    margin-bottom: 0px;;
+}
 
 #end_a_5::before{
     content: '';
