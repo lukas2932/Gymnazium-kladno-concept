@@ -14,6 +14,7 @@
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
     border: 2px solid rgba(0,0,0,0.1);
+    opacity: 0.8;
 
 }
 #sideMenuLi{
@@ -33,6 +34,9 @@
     gap: 10px;
     height: 100%;
     font-size: 13px;
+    background: url(../img/rVdUK6.jpg) center;
+    background-size: cover;
+    margin-left: -8px;
 }
 #textOne{
     border:1px solid rgba(0,0,0,0.2);
@@ -66,13 +70,15 @@
 #end{
     position: relative;
     width: 100vw;
-    height: 300px;
-    background-color: rgba(0,0,0,0.4);
+    height: 250px;
+    background-color: rgba(0,0,0,0.15);
     margin-left: -8px;
     margin-bottom: -8px;
     display: flex;
     justify-content: space-around;
     bottom: 0;
+    z-index: 1;
+    border-top: 2px solid rgba(0,0,0,0.1);
 }
 
 #endContacts{
@@ -117,8 +123,8 @@
     left: 0;
     width: 0;
     height: 0;
-    border-bottom: 1px solid black transparent;
-    border-left: 1px solid black transparent;
+    border-bottom: 1px solid rgba(0,0,0,0.8) transparent;
+    border-left: 1px solid rgba(0,0,0,0.8) transparent;
     border-radius: 0.25em;
     animation: var(--animationBefore, none);
 
@@ -132,8 +138,8 @@
     right: 0;
     width: 0;
     height: 0;
-    border-right: 1px solid black transparent;
-    border-top: 1px solid black transparent;
+    border-right: 1px solid rgba(0,0,0,0.8) transparent;
+    border-top: 1px solid rgba(0,0,0,0.8) transparent;
     border-radius: 0.25em;
     animation: var(--animationAfter, none);
 
@@ -261,7 +267,7 @@
 #partners{
     text-transform: uppercase;
     display: flex;
-    justify-content:space-evenly;
+    justify-content:space-around;
     align-items: center;
     flex-direction: column;
     
@@ -342,7 +348,7 @@
 #end_last{
     width: 100vw;
     height:30px;
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0,0,0,0.15);
     margin-left: -8px;
     margin-bottom: -8px;
     margin-top:8px;
@@ -467,6 +473,7 @@
     cursor: pointer;
     position: relative;
     overflow: hidden;
+    border-radius: 0.5em;
 }
 #hamburger_p{
     position: relative;
@@ -561,21 +568,21 @@
 }
 @keyframes partner_before_up {
     0%{
-        border-bottom: 2px solid rgba(0,0,0,0.5) transparent;
-        border-left: 2px solid rgba(0,0,0,0.5) transparent;
+        border-bottom: 2px solid rgba(0,0,0,0.3) transparent;
+        border-left: 2px solid rgba(0,0,0,0.3) transparent;
         width: 0;
         height: 0;
         background-color: none;
     }
     50%{
-        border-bottom: 2px solid rgba(0,0,0,0.5);
-        border-left: 2px solid rgba(0,0,0,0.5);
+        border-bottom: 2px solid rgba(0,0,0,0.3);
+        border-left: 2px solid rgba(0,0,0,0.3);
         width: 0;
         height: 0;
     }
     100%{
-        border-bottom: 2px solid rgba(0,0,0,0.5);
-        border-left: 2px solid rgba(0,0,0,0.5);
+        border-bottom: 2px solid rgba(0,0,0,0.3);
+        border-left: 2px solid rgba(0,0,0,0.3);
         width: 100%;
         height: 100%;
         background-color: rgba(0,0,0,0.05)
@@ -584,21 +591,21 @@
 
 @keyframes partner_before_down {
     0%{
-        border-bottom: 2px solid rgba(0,0,0,0.5);
-        border-left: 2px solid rgba(0,0,0,0.5);
+        border-bottom: 2px solid rgba(0,0,0,0.3);
+        border-left: 2px solid rgba(0,0,0,0.3);
         width: 100%;
         height: 100%;
         background-color: rgba(0,0,0,0.05)
     }
     50%{
-        border-bottom: 2px solid rgba(0,0,0,0.5);
-        border-left: 2px solid rgba(0,0,0,0.5);
+        border-bottom: 2px solid rgba(0,0,0,0.3);
+        border-left: 2px solid rgba(0,0,0,0.3);
         width: 0;
         height: 0;
     }
     100%{
-        border-bottom: 2px solid rgba(0,0,0,0.5) transparent;
-        border-left: 2px solid rgba(0,0,0,0.5) transparent;
+        border-bottom: 2px solid rgba(0,0,0,0.3) transparent;
+        border-left: 2px solid rgba(0,0,0,0.3) transparent;
         width: 0;
         height: 0;
         background-color: none;
@@ -607,21 +614,21 @@
 
 @keyframes partner_after_up {
     0%{
-        border-top: 2px solid rgba(0,0,0,0.5) transparent;
-        border-right: 2px solid rgba(0,0,0,0.5) transparent;
+        border-top: 2px solid rgba(0,0,0,0.3) transparent;
+        border-right: 2px solid rgba(0,0,0,0.3) transparent;
         width: 0;
         height: 0;
         background-color: none;
     }
     50%{
-        border-top: 2px solid rgba(0,0,0,0.5);
-        border-right: 2px solid rgba(0,0,0,0.5);
+        border-top: 2px solid rgba(0,0,0,0.3);
+        border-right: 2px solid rgba(0,0,0,0.3);
         width: 0;
         height: 0;
     }
     100%{
-        border-top: 2px solid rgba(0,0,0,0.5);
-        border-right: 2px solid rgba(0,0,0,0.5);
+        border-top: 2px solid rgba(0,0,0,0.3);
+        border-right: 2px solid rgba(0,0,0,0.3);
         width: 100%;
         height: 100%;
         background-color: rgba(0,0,0,0.05)
@@ -630,23 +637,23 @@
 
 @keyframes partner_after_down {
     0%{
-        border-top: 2px solid rgba(0,0,0,0.5);
-        border-right: 2px solid rgba(0,0,0,0.5);
+        border-top: 2px solid rgba(0,0,0,0.3);
+        border-right: 2px solid rgba(0,0,0,0.3);
         width: 100%;
         height: 100%;
         background-color: rgba(0,0,0,0.05)
     }
     50%{
-        border-top: 2px solid rgba(0,0,0,0.5);
-        border-right: 2px solid black;
+        border-top: 2px solid rgba(0,0,0,0.3);
+        border-right: 2px solid rgba(0,0,0,0.3);
         width: 0;
         height: 0;
     }
     100%{
         width: 0;
         height: 0;
-        border-top: 2px solid black transparent;
-        border-right: 2px solid black transparent;
+        border-top: 2px solid rgba(0,0,0,0.3) transparent;
+        border-right: 2px solid rgba(0,0,0,0.3) transparent;
         background-color: none;
     }
 }

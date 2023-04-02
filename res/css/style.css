@@ -18,6 +18,9 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    background: url(../img/Nepojmenované.jpg) center center;
+    background-size: cover;
+    border-bottom: 2px solid rgba(0,0,0,0.1);
 }
 #menu > ul{
     display: flex;
@@ -72,7 +75,9 @@ body{
     bottom: 0;
     width:0;
     height: 100%;
-    background-color: lightgrey;
+    background: url(../img/pngtree-blue-arrows-image_934739.jpg);
+    background-size: cover;
+    opacity: 0.35;
 }
 .menuUnderSecondOne:hover::before{
     animation:menuUnderSecondAnimation 0.5s forwards ;
@@ -103,7 +108,7 @@ body{
     border-bottom-left-radius: 1em;
     width: 100px;
     overflow: hidden;
-    opacity: 0.96;
+    opacity:1;
 }
 #menuUnderTwo{
     list-style-type: none;
@@ -117,7 +122,11 @@ body{
     border-bottom-left-radius: 1em;
     width: 100px;
     overflow: hidden;
-    opacity: 0.96;
+    opacity: 1;
+}
+.menuUnderSecondOne{
+    background: url(../img/Diagonal-Bricks-Grey-Seamless-Pattern-For-Website-Background.jpg);
+    background-size: cover;
 }
 
 #menuSecondThree{
@@ -152,7 +161,7 @@ body{
     background-size: cover;
     margin-left: -8px;
     width: 100vw;
-    height: 900px;
+    height: 800px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -161,7 +170,7 @@ body{
 #canvas{
     position: absolute;
     width: 100vw;
-    height: 900px;
+    height: 800px;
     background-color: rgba(0,0,0,0.5);
 }
 #title{
@@ -955,6 +964,23 @@ body{
             height: 0px;
         }    
     }
+
+    @keyframes sideMenuAnimationDownFive{
+        0%{
+            height: 0px;
+        }
+        100%{
+            height: 390px;
+        }    
+    }
+    @keyframes sideMenuAnimationUpFive{
+        0%{
+            height: 390px;
+        }
+        100%{
+            height: 0px;
+        }    
+    }
     
 }
 
@@ -966,12 +992,12 @@ body{
             height: 0px;
         }
         100%{
-            height: 380px;
+            height: 400px;
         }    
     }
     @keyframes sideMenuAnimationUpFive{
         0%{
-            height: 380px;
+            height: 400px;
         }
         100%{
             height: 0px;
@@ -1070,6 +1096,21 @@ body{
     #hamburger_menu{
         display: none;
     }
+    #textOneArticle img{
+        width: 200px;
+    }
+    #textOne, #textTwo{
+        width: 90% !important;
+    }
+    #labels_title{
+        width: 95% !important;
+    }
+    #textOneOne{
+        width: 90% !important;
+    }
+    #platno, #canvas{
+        height: 500px;
+    }
 }
 @media (max-width:450px){
     
@@ -1111,6 +1152,21 @@ body{
     }
     #labels_title{
         width: 95% !important;
+    }
+    #textOneOne{
+        width: 90% !important;
+    }
+    #textOneArticle img{
+        width: 200px;
+    }
+    #menu{
+        display: none;
+    }
+    #hamburger_menu, #menu_hamburger_ul{
+        
+    }
+    #menu_hamburger_ul{
+        margin-top:0 !important;
     }
     
 
