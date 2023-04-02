@@ -61,6 +61,8 @@ const menu_hamburger_ul_li_2 = document.getElementById("menu_hamburger_ul_li_2")
 const menu_hamburger_ul_li_3 = document.getElementById("menu_hamburger_ul_li_3");
 const menu_hamburger_ul_li_4 = document.getElementById("menu_hamburger_ul_li_4");
 const menu_hamburger_ul_li_5 = document.getElementById("menu_hamburger_ul_li_5");
+const menu_hamburger_ul_li_6 = document.getElementById("menu_hamburger_ul_li_6");
+const menu_hamburger_ul_li_7 = document.getElementById("menu_hamburger_ul_li_7");
 
 const end_a_1 = document.getElementById("end_a_1");
 const end_a_2 = document.getElementById("end_a_2");
@@ -274,6 +276,20 @@ menu_hamburger_ul_li_5.onmouseover = () => {
 }
 menu_hamburger_ul_li_5.onmouseout = () => {
     menu_hamburger_ul_li_5.style.setProperty('--hamburger_li_animation','li_hamburger_animation_down 0.3s forwards')
+}
+
+menu_hamburger_ul_li_6.onmouseover = () => {
+    menu_hamburger_ul_li_6.style.setProperty('--hamburger_li_animation','li_hamburger_animation_up 0.3s forwards')
+}
+menu_hamburger_ul_li_6.onmouseout = () => {
+    menu_hamburger_ul_li_6.style.setProperty('--hamburger_li_animation','li_hamburger_animation_down 0.3s forwards')
+}
+
+menu_hamburger_ul_li_7.onmouseover = () => {
+    menu_hamburger_ul_li_7.style.setProperty('--hamburger_li_animation','li_hamburger_animation_up 0.3s forwards')
+}
+menu_hamburger_ul_li_7.onmouseout = () => {
+    menu_hamburger_ul_li_7.style.setProperty('--hamburger_li_animation','li_hamburger_animation_down 0.3s forwards')
 }
 
 
