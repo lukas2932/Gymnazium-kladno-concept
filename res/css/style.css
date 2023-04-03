@@ -501,7 +501,7 @@ body{
     border-bottom: 1px solid rgba(0,0,0,0.35);
 }
 #textOne a:hover::before{
-    animation:textOneA_animation_up 0.5s forwards ;
+    animation:textOneA_animation_up 0.4s forwards ;
 }
 #labels h1{
     font-size: 22px;;
