@@ -21,6 +21,9 @@
     padding: 8px;
     cursor: pointer;
 }
+#menu a{
+    padding-right: 10px;
+}
 #labels{
     position: relative;
     display: flex;
@@ -542,6 +545,14 @@
 }
 .sideHover:hover{
     background-color: rgba(0,0,0,0.1);
+}
+.sideHover a{
+    color: black;
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top:6px;;
+    padding-bottom:6px;;
 }
 .secondText{
     display: flex;
